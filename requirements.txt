@@ -3,7 +3,7 @@ anyjson==0.3.3
 asgiref==3.5.0
 billiard==3.3.0.23
 celery==3.1.25
-Django==2.2.2
+Django==2.2.6
 django-celery==3.2.1
 django-crontab==0.7.1
 django-rest-framework==0.1.0
