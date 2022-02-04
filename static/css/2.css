@@ -1,0 +1,189 @@
+.yq{
+	height: 220px;
+}
+
+.fl{
+	width: 90%;
+    display: flex;
+    list-style: none;
+    position: relative;	
+	height: 110px;
+	margin: 0px auto;
+}
+
+.fl:nth-child(1){
+	margin-top: 10px;
+}
+
+.fl >li {
+    width: 100%;
+    color: wheat;
+    font-size: 20px;
+    cursor: pointer;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+}
+
+
+.fl >li:hover{
+    background-color: rgba(101, 132, 226, 0.1);
+}
+
+@font-face {
+      font-family: mFont;
+      src: url(../font/LcdD.ttf);
+    }
+
+.sz {
+    font: 26px mFont;
+	text-align: center;
+	font-size: 24px;
+}
+
+.sz:nth-child(2) {
+	font-size:  38px;
+}
+
+.sz:nth-child(3) {
+	font-size:  18px;
+}
+
+.sjly {
+    position: absolute;
+    color: royalblue;
+    left: 150px;
+}
+.ly {
+    position: absolute;
+    right: 200px;
+    color: slateblue;
+    z-index: 1;
+}
+.ly > a{
+    text-decoration: none;
+    color: salmon;
+}
+
+.fxdqlb {
+    float: left;
+    width: 100px;
+    margin-left: 25px;
+    height: 120px;
+    border-radius: 10px;
+    margin-top: 5px;
+
+}
+
+.fxdqlb:nth-child(2){
+    margin-left: 20px;
+    width: 380px;
+}
+
+.fxdqlb > p:nth-child(1) {
+    color: orangered;
+}
+.fxdqlb > p:nth-child(2){
+    color: darkorange;
+    border-bottom: 2px solid darkorange;
+}
+
+.fxdqlbp {
+    text-align: center;
+    margin-top: 16px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-bottom: 2px solid red;
+    color: white;
+    line-height: 40px;
+    background-color: rgba(101, 132, 226, 0.1);
+}
+
+
+
+.fxdqlbpb {
+    display: flex;
+    text-align: left;
+    width: 28.375rem;
+    margin-top: 16px;
+}
+
+.fxdqlbpb:nth-child(2){
+    border-bottom: 2px solid darkorange;
+}
+
+.fxdt {
+    width: 45%;
+    height: 64%;
+    margin-left: 12px;
+    float: left;
+    margin-top: 8px;
+}
+
+.fxdt1{
+	margin-left: 26px;
+	border: 1px solid red;
+}
+.fxdt2 {
+	border: 1px solid orange;
+}
+
+.outer{
+    width: 29.0625rem;
+    height: 40px;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.outer ul{
+    display:inline-block;
+    height: 80px;
+    -webkit-transform: translate3d(0, 0, 0); /*3d渲染，开启硬件加速*/
+    transform: translate3d(0, 0, 0);
+    font-size: 0;   /* 使inline-block无默认间距 */
+    white-space: nowrap;  /* 超出不折行 */
+}
+.outer ul li{
+    display: inline-block;
+    padding-right: 20px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    font-size: 18px;
+    color: orangered;
+}
+
+#J_scroll2 li{
+    color: darkorange;
+}
+
+.theanimation{
+    animation:theanimation 34s infinite linear;
+    -webkit-animation:theanimation 34s infinite linear;
+}
+
+.theanimation1{
+    animation:theanimation 132s infinite linear;
+    -webkit-animation:theanimation 132s infinite linear;
+}
+
+@keyframes theanimation{
+  from {
+    transform:translateX(0%);
+  }
+  to {
+    transform:translateX(-100%);
+  }
+}
+@-webkit-keyframes theanimation{
+  from {
+    -webkit-transform:translateX(0%);
+  }
+  to {
+    -webkit-transform:translateX(-100%);
+  }
+}
+
+
+
+
+

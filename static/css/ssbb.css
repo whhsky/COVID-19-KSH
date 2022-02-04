@@ -1,0 +1,219 @@
+* {
+	padding: 0;
+	margin: 0;
+	user-select: none;
+}
+
+body,
+html {
+	width: 99.9%;
+	height: 99.9%;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+section {
+	width: 100%;
+	height: 97%;
+}
+
+.heade {
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+}
+
+.box {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+.boxA {
+	height: 44%;
+}
+
+.boxB {
+
+	height: 55.5%;
+}
+
+.boxA>div {
+	width: 32.6%;
+}
+
+.boxB>div {
+	margin-top: 10px;
+	width: 32.6%;
+}
+
+.sjly {
+	color: royalblue;
+
+}
+
+#bjsj {
+	text-align: center;
+	font-size: 24px;
+	color: chocolate;
+	position: relative;
+}
+
+.ly {
+	position: absolute;
+	right: 200px;
+	color: slateblue;
+	z-index: 1;
+}
+
+.ly>a {
+	text-decoration: none;
+	color: salmon;
+}
+
+
+.boxchild {
+	width: 100%;
+	position: relative;
+	z-index: 3;
+	margin: 0 auto;
+}
+
+.boxchild::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	border: 2px solid slateblue;
+	margin: 0px;
+	z-index: -1;
+	-webkit-animation: line11 8s linear infinite;
+	-o-animation: line11 8s linear infinite;
+	animation: line11 8s linear infinite;
+}
+
+.boxchild::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	border: 2px solid darkmagenta;
+	margin: 0px;
+	z-index: -1;
+	-webkit-animation: line22 8s linear infinite;
+	-o-animation: line22 8s linear infinite;
+	animation: line22 8s linear infinite;
+}
+
+#box1 {
+	width: 89%;
+	height: 40%;
+	position: absolute;
+	overflow: hidden;
+	top: 58%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	background-color: rgba(101, 132, 226, 0.1);
+	border-radius: 10px;
+}
+
+.aa {
+	width: 35rem;
+}
+
+.aa>div {
+	width: 80px;
+	height: 21px;
+	text-align: center;
+	float: left;
+	color: salmon;
+	margin-top: 10px;
+	margin-left: 14px;
+	border-bottom: 1px solid salmon;
+	border-radius: 10px;
+}
+
+.timez {
+	width: 80px;
+	height: 21px;
+	text-align: center;
+	float: right;
+	color: salmon;
+	margin-top: 10px;
+	border-bottom: 1px solid salmon;
+	border-radius: 10px;
+}
+
+.aa>li {
+	float: left;
+	width: 350px;
+	height: 20px;
+	border-bottom: 1px solid slateblue;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	list-style: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: center;
+	color: indianred;
+}
+
+.aa>li>a {
+	text-decoration: none;
+	color: hotpink;
+}
+
+
+
+@keyframes line11 {
+
+	0%,
+	100% {
+		clip-path: inset(0 0 99% 0)
+	}
+
+	25% {
+		clip-path: inset(0 99% 0 0)
+	}
+
+	50% {
+		clip-path: inset(99% 0 0 0)
+	}
+
+	75% {
+		clip-path: inset(0 0 0 99%)
+	}
+}
+
+@keyframes line22 {
+
+	0%,
+	100% {
+		clip-path: inset(99% 0 0 0)
+	}
+
+	25% {
+		clip-path: inset(0 0 0 99%)
+	}
+
+	50% {
+		clip-path: inset(0 0 99% 0)
+	}
+
+	75% {
+		clip-path: inset(0 99% 0 0)
+	}
+}
